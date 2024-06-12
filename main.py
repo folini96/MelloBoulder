@@ -47,7 +47,7 @@ for boulder, details in boulder_list.items():
     pub_html = folium.Html(
         f"""
         <p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">{title}</span></p>
-        <iframe src={insta_post}embed width="400" height="400" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+        <iframe src={insta_post}embed width="350" height="400" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
     """, script=True)
 
     popup = folium.Popup(pub_html, max_width=700)
