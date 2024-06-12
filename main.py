@@ -64,4 +64,4 @@ tab_title = """<title>MiraMonkeys boulders</title>"""
 MyMap.get_root().html.add_child(folium.Element(tab_title))
 
 # Save the map
-MyMap.save('MyMap.html')
+MyMap.save('index.html')
