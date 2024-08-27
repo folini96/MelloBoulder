@@ -24,7 +24,10 @@ boulder_list = {'1': [(46.21945980379365, 9.637749612424523), 'https://www.insta
                 '18': [(46.22322825558623, 9.635099172546335), 'https://www.instagram.com/p/C7heVq4NEtq/', 'Scivolo - Blocco 1 - Camarillo per Tutti 7A+'],
                 '19': [(46.22146858783223, 9.634227367487158), 'https://www.instagram.com/p/C8FNkXot3R5/', 'Zocca Superiore - Blocco 2 - L\'Opinione dell\'Opilione /B'],
                 '20': [(46.22143536663251, 9.64005812258591), 'https://www.instagram.com/p/C79H96VNPa4/', 'Tendine dello Yeti - Blocco 4 - Linea F 6A+'],
-                '21': [(46.22088442559476, 9.634511782977246), 'https://www.instagram.com/p/C7o8qQxNaTt/', 'Zocca Superiore - Blocco 7 - Linea F 6B']}
+                '21': [(46.22088442559476, 9.634511782977246), 'https://www.instagram.com/p/C7o8qQxNaTt/', 'Zocca Superiore - Blocco 7 - Linea F 6B'],
+                '22': [(46.245149, 9.594242), 'https://www.instagram.com/p/C8PqzysNa2c/', 'ERSAF - Lucilla - Linea B 7A'],
+                '23': [(46.2439287, 9.5954898), 'https://www.instagram.com/p/C8grc8CNnUH/','ERSAF - Lo scrigno del bosco - Spigolo rudi 6B'],
+                }
 
 cluster = MarkerCluster(options={'showCoverageOnHover': False,
                                         'zoomToBoundsOnClick': True,
