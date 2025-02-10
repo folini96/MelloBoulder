@@ -11,7 +11,8 @@ boulder_list = [
              'name': 'Blocco 2 - Il Profeta',
              'coords': (46.21934406490515, 9.640707829572289),
              'lines': [
-                 {'name': 'Linea A 6B', 'link': 'https://www.instagram.com/p/C6O5jtlN4EM/'}
+                 {'name': 'Linea A 6B', 'link': 'https://www.instagram.com/p/C6O5jtlN4EM/'},
+                 {'name': 'Baywatch 6C', 'link': 'https://www.instagram.com/p/DA1VbYvNso2/'}
              ]
          },
          {
@@ -39,6 +40,13 @@ boulder_list = [
              'lines': [
                  {'name': 'Lo Strapiombo 7A+', 'link': 'https://www.instagram.com/p/C5vhSI9tJpN/'}
              ]
+         },
+         {
+             'name': 'Blocco 15 - Quarzo Liquido',
+             'coords': (46.2211150, 9.6410640),
+             'lines': [
+                 {'name': 'Il Mangiacaccole 7B', 'link': 'https://www.instagram.com/p/DF3QA8PNyYP/'}
+             ]
          }
      ]
      },
@@ -48,14 +56,16 @@ boulder_list = [
              'name': 'Blocco 1',
              'coords': (46.221196283305204, 9.64024033384728),
              'lines': [
-                 {'name': 'Shiba 7B', 'link': 'https://www.instagram.com/p/C6adgNsthHB/'}
+                 {'name': 'Shiba 7B', 'link': 'https://www.instagram.com/p/C6adgNsthHB/'},
+                 {'name': 'Linea B 6B', 'link': 'https://www.instagram.com/p/DCHDuy-vYh4/'}
              ]
          },
          {
              'name': 'Blocco 3 - Tendine Dello Yeti',
              'coords': (46.22132227721143, 9.640056979892453),
              'lines': [
-                 {'name': 'Andrea Si È Perso Diretto', 'link': 'https://www.instagram.com/p/C_TZAGWNc2d/'},
+                 {'name': 'Andrea Si È Perso Diretto 7B', 'link': 'https://www.instagram.com/p/C_TZAGWNc2d/'},
+                 {'name': 'Tendine Sinistro 6C+', 'link': 'https://www.instagram.com/p/DFBAAm6tbj7/'},
                  {'name': 'Linea N 7A', 'link': 'https://www.instagram.com/p/C_OUNY7t0Ec/'},
                  {'name': 'Linea T 7A', 'link': 'https://www.instagram.com/p/C7PWHPCNk4p/'},
              ]
@@ -64,9 +74,39 @@ boulder_list = [
              'name': 'Blocco 4',
              'coords': (46.22143536663251, 9.64005812258591),
              'lines': [
+                 {'name': 'Titanic 6C+', 'link': 'https://www.instagram.com/p/DFGIjTntlmR/'},
                  {'name': 'Linea F 6A+', 'link': 'https://www.instagram.com/p/C79H96VNPa4/'}
              ]
          },
+     ]
+     },
+    {'sector_name': 'Vermuth Strisciut',
+     'boulders': [
+         {
+             'name': 'Blocco 2 - Il Quadricipite',
+             'coords': (46.2223497, 9.6388547),
+             'lines': [
+                 {'name': 'Linea D 6C', 'link': 'https://www.instagram.com/p/DCmx-fdN6io/'},
+             ]
+         },
+     ]
+     },
+    {'sector_name': 'Visido Alta',
+     'boulders': [
+         {
+             'name': 'Blocco 30',
+             'coords': (46.221783, 9.643058),
+             'lines': [
+                 {'name': 'La Sottile Linea Gialla 7C', 'link': 'https://www.instagram.com/p/DChgBclN6Xl/'},
+             ]
+         },
+         {
+             'name': 'Blocco non in guida',
+             'coords': (46.222299, 9.643131),
+             'lines': [
+                 {'name': 'Linea A 7A+', 'link': 'https://www.instagram.com/p/DDAXKtIN3FM/'},
+             ]
+         }
      ]
      },
     {'sector_name': 'Tarzan',
@@ -76,6 +116,7 @@ boulder_list = [
              'coords': (46.21918101169434, 9.639728665460543),
              'lines': [
                  {'name': 'Il Sogno Di Tarzan 7B', 'link': 'https://www.instagram.com/p/C6EmbpetWpu/'},
+                 {'name': 'Tarzan e Cita stand 7B+', 'link': 'https://www.instagram.com/p/DFqS26gtfvF/'},
                  {'name': 'Linea G 6B', 'link': 'https://www.instagram.com/p/C6J1zUcN3Em/'},
                  {'name': 'Linea N 7A', 'link': 'https://www.instagram.com/p/C6ZO2faNmha/'},
              ]
@@ -84,7 +125,7 @@ boulder_list = [
              'name': 'Blocco 3 - Masso Dell\'Entalpia',
              'coords': (46.21928103898559, 9.639222674606636),
              'lines': [
-                 {'name': 'Linea H 6C+', 'link': 'https://www.instagram.com/p/C5-5UX4NPlP/'},
+                 {'name': 'Linea H 6C+', 'link': 'https://www.instagram.com/p/DCZjcrUNefL/'},
              ]
          }
      ]
@@ -92,8 +133,15 @@ boulder_list = [
     {'sector_name': 'Zocca',
      'boulders': [
          {
+             'name': 'Blocco 1 - Mezon Creek',
+             'coords': (46.2196095, 9.6377637),
+             'lines': [
+                 {'name': 'Tacchine Assassine 6C', 'link': 'https://www.instagram.com/p/DE2KWj9NzlX/'}
+             ]
+         },
+         {
              'name': 'Blocco 8 - Black Bloc',
-             'coords': (46.21945980379365, 9.637749612424523),
+             'coords': (46.219296, 9.638271),
              'lines': [
                  {'name': 'Ayrton Senna 7A', 'link': 'https://www.instagram.com/p/C5lBru_t6wz/'}
              ]
@@ -164,13 +212,45 @@ boulder_list = [
          },
      ]
      },
+    {'sector_name': 'Remenno',
+     'boulders': [
+         {
+             'name': 'Blocco 6 - Masso di Goldrake',
+             'coords': (46.2259697, 9.6354205),
+             'lines': [
+                 {'name': 'Goldrake 6C', 'link': 'https://www.instagram.com/p/DBCGPAQtF96/'}
+             ]
+         },
+         {
+             'name': 'Blocco 8 - Masso Erculeo',
+             'coords': (46.2257025, 9.6357095),
+             'lines': [
+                 {'name': 'Linea C 6B', 'link': 'https://www.instagram.com/p/DA88ggZNusE/'}
+             ]
+         },
+     ]
+     },
     {'sector_name': 'La Mota',
      'boulders': [
+         {
+             'name': 'Blocco 7 - Masso del Diavolo',
+             'coords': (46.235770, 9.629098),
+             'lines': [
+                 {'name': 'Diavolo 7A', 'link': 'https://www.instagram.com/p/DAanG21tPMs/'}
+             ]
+         },
          {
              'name': 'Blocco 14 - Sasso Gioele',
              'coords': (46.235944, 9.629286),
              'lines': [
                  {'name': 'Melloblocco Version 7A', 'link': 'https://www.instagram.com/p/C__OwsiNXOL/'}
+             ]
+         },
+         {
+             'name': 'Blocco 15 - Sasso Ketty',
+             'coords': (46.235920, 9.628916),
+             'lines': [
+                 {'name': 'Linea A 6B', 'link': 'https://www.instagram.com/p/DBInTqatu0N/'}
              ]
          },
          {
@@ -239,7 +319,8 @@ boulder_list = [
              'name': 'Blocco 3 - Oscurità',
              'coords': (46.240353, 9.600340),
              'lines': [
-                 {'name': 'Oscurità 7A', 'link': 'https://www.instagram.com/p/C8kJ2bLNVBz/'}
+                 {'name': 'Oscurità 7A', 'link': 'https://www.instagram.com/p/C8kJ2bLNVBz/'},
+                 {'name': 'Oscurità sit 7B+', 'link': 'https://www.instagram.com/p/DCPbflLNcWZ/'}
              ]
          }
      ]
@@ -251,6 +332,13 @@ boulder_list = [
              'coords': (46.2439287, 9.5954898),
              'lines': [
                  {'name': 'Spigolo Rudi 6B', 'link': 'https://www.instagram.com/p/C8grc8CNnUH/'}
+             ]
+         },
+         {
+             'name': 'Blocco 10',
+             'coords': (46.243162, 9.595707),
+             'lines': [
+                 {'name': 'La Balance 7a', 'link': 'https://www.instagram.com/p/DAVsldrtOZN/'}
              ]
          },
          {
@@ -292,6 +380,20 @@ boulder_list = [
      },
     {'sector_name': 'Proprietà privata',
      'boulders': [
+         {
+             'name': 'Blocco 3 - Proprietà Privata',
+             'coords': (46.249504, 9.641525),
+             'lines': [
+                 {'name': 'Il Lancio 7A', 'link': 'https://www.instagram.com/p/DAjHEW8NUQN/'}
+             ]
+         },
+         {
+             'name': 'Blocco 8 - Masso del Torrente',
+             'coords': (46.2501274, 9.6418541),
+             'lines': [
+                 {'name': 'Linea D 6A+', 'link': 'https://www.instagram.com/p/DAoVFfvNquP/'}
+             ]
+         },
          {
              'name': 'Blocco 9 - Muro Dei Granchi',
              'coords': (46.250127, 9.642155),
