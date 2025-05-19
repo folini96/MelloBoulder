@@ -5,6 +5,17 @@ from folium.plugins import LocateControl, MarkerCluster
 marker_img = './stone.png'
 
 boulder_list = [
+    {'sector_name': 'Ponte del Baffo',
+     'boulders': [
+         {
+             'name': 'Blocco 1 - Bad Ass',
+             'coords': (46.1937559, 9.6252532),
+             'lines': [
+                 {'name': 'Studio Line 7B', 'link': 'https://www.instagram.com/p/DJHwetSt06b/'}
+             ]
+         },
+     ]
+     },
     {'sector_name': 'Tetto Di Filorera',
      'boulders': [
          {
@@ -12,7 +23,8 @@ boulder_list = [
              'coords': (46.21934406490515, 9.640707829572289),
              'lines': [
                  {'name': 'Linea A 6B', 'link': 'https://www.instagram.com/p/C6O5jtlN4EM/'},
-                 {'name': 'Baywatch 6C', 'link': 'https://www.instagram.com/p/DA1VbYvNso2/'}
+                 {'name': 'Baywatch 6C', 'link': 'https://www.instagram.com/p/DA1VbYvNso2/'},
+                 {'name': 'Linea F 4C', 'link': 'https://www.instagram.com/p/DGv4_AAN8mY/'}
              ]
          },
          {
@@ -42,12 +54,47 @@ boulder_list = [
              ]
          },
          {
+             'name': 'Blocco 4 - Alta Pressione',
+             'coords': (46.220613, 9.641112),
+             'lines': [
+                 {'name': 'Alta Pressione 6C+', 'link': 'https://www.instagram.com/p/DGK8HLHtlh8/'}
+             ]
+         },
+         {
+             'name': 'Blocco 6',
+             'coords': (46.220745, 9.641010),
+             'lines': [
+                 {'name': 'Totem 6B+', 'link': 'https://www.instagram.com/p/DHrH8NLNVD8/'}
+             ]
+         },
+         {
+             'name': 'Blocco 14',
+             'coords': (46.220834, 9.641114),
+             'lines': [
+                 {'name': 'Linea E 6A+', 'link': 'https://www.instagram.com/p/DGXcvTYNcWU/'}
+             ]
+         },
+         {
              'name': 'Blocco 15 - Quarzo Liquido',
              'coords': (46.2211150, 9.6410640),
              'lines': [
                  {'name': 'Il Mangiacaccole 7B', 'link': 'https://www.instagram.com/p/DF3QA8PNyYP/'}
              ]
-         }
+         },
+         {
+             'name': 'Blocco 23',
+             'coords': (46.220417, 9.641098),
+             'lines': [
+                 {'name': 'Magica Miky 7A', 'link': 'https://www.instagram.com/p/DH8_4ZIt3AN/'}
+             ]
+         },
+         {
+             'name': 'Blocco 36',
+             'coords': (46.2208881, 9.6414142),
+             'lines': [
+                 {'name': 'Il Bisteccone 7A+', 'link': 'https://www.instagram.com/p/DGQ6YBotPbz/'}
+             ]
+         },
      ]
      },
     {'sector_name': 'Il Tendine Dello Yeti',
@@ -89,6 +136,13 @@ boulder_list = [
                  {'name': 'Linea D 6C', 'link': 'https://www.instagram.com/p/DCmx-fdN6io/'},
              ]
          },
+         {
+             'name': 'Blocco 8 - L\'Elicottero',
+             'coords': (46.2229712, 9.6386877),
+             'lines': [
+                 {'name': 'Billy Idol 7A+', 'link': 'https://www.instagram.com/p/DHZBIWyNdcO/'},
+             ]
+         },
      ]
      },
     {'sector_name': 'Visido Alta',
@@ -118,6 +172,7 @@ boulder_list = [
                  {'name': 'Il Sogno Di Tarzan 7B', 'link': 'https://www.instagram.com/p/C6EmbpetWpu/'},
                  {'name': 'Tarzan e Cita stand 7B+', 'link': 'https://www.instagram.com/p/DFqS26gtfvF/'},
                  {'name': 'Linea G 6B', 'link': 'https://www.instagram.com/p/C6J1zUcN3Em/'},
+                 {'name': 'Spalla 6C+', 'link': 'https://www.instagram.com/p/DJUbA3VNJ5O/'},
                  {'name': 'Linea N 7A', 'link': 'https://www.instagram.com/p/C6ZO2faNmha/'},
              ]
          },
@@ -168,6 +223,7 @@ boulder_list = [
              'name': 'Blocco 1 - Castello',
              'coords': (46.221698735924704, 9.634388310969028),
              'lines': [
+                 {'name': 'La Lama Nella Roccia 5C', 'link': 'https://www.instagram.com/p/DGlZNmsNlef/'},
                  {'name': 'Katana San 6B', 'link': 'https://www.instagram.com/p/C7KKIOStyhE/'}
              ]
          },
@@ -199,6 +255,13 @@ boulder_list = [
                  {'name': 'Linea F 6B', 'link': 'https://www.instagram.com/p/C8FNkXot3R5/'}
              ]
          },
+         {
+             'name': 'Blocco 9',
+             'coords': (46.219281, 9.635498),
+             'lines': [
+                 {'name': 'Spigolo Kima 6C', 'link': 'https://www.instagram.com/p/DGaUiYXNSIM/'}
+             ]
+         },
      ]
      },
     {'sector_name': 'Scivolo',
@@ -208,6 +271,28 @@ boulder_list = [
              'coords': (46.22322825558623, 9.635099172546335),
              'lines': [
                  {'name': 'Camarillo Per Tutti 7A+', 'link': 'https://www.instagram.com/p/C7heVq4NEtq/'}
+             ]
+         },
+         {
+             'name': 'Blocco 2 - Masso delle Crepe',
+             'coords': (46.2241479, 9.6347016),
+             'lines': [
+                 {'name': 'Cadi e Muori 7A+', 'link': 'https://www.instagram.com/p/DIGYLCWt3RN/'}
+             ]
+         },
+         {
+             'name': 'Blocco 12',
+             'coords': (46.2244246251822, 9.635044787851378),
+             'lines': [
+                 {'name': 'Heart of Stone 7B', 'link': 'https://www.instagram.com/p/DHHHzSQNTVD/'},
+                 {'name': 'El Corazon 6C', 'link': 'https://www.instagram.com/p/DGgOCwPNLgk/'}
+             ]
+         },
+         {
+             'name': 'Blocco 16 . Masso del Sassista',
+             'coords': (46.22431240609788, 9.634684884576668),
+             'lines': [
+                 {'name': 'Linea D', 'link': 'https://www.instagram.com/p/DHBEJZgN5og/'}
              ]
          },
      ]
@@ -226,6 +311,13 @@ boulder_list = [
              'coords': (46.2257025, 9.6357095),
              'lines': [
                  {'name': 'Linea C 6B', 'link': 'https://www.instagram.com/p/DA88ggZNusE/'}
+             ]
+         },
+         {
+             'name': 'Blocco 21 - Sasso Piatto',
+             'coords': (46.224967, 9.635729),
+             'lines': [
+                 {'name': 'Bidone 6C+', 'link': 'https://www.instagram.com/p/DG01FHWtQqs/'}
              ]
          },
      ]
@@ -310,11 +402,26 @@ boulder_list = [
              'lines': [
                  {'name': 'Linea E 6B', 'link': 'https://www.instagram.com/p/C_tPncstCmX/'}
              ]
+         },
+         {
+             'name': 'Blocco 36 - Pietra delle Meditazioni',
+             'coords': (46.2367992, 9.6340458),
+             'lines': [
+                 {'name': 'Dj Set 7A', 'link': 'https://www.instagram.com/p/DHgFUPqtvP0/'},
+                 {'name': 'Onice Nera 6C+', 'link': 'https://www.instagram.com/p/DHlvq2tNzb8/'}
+             ]
          }
      ]
      },
     {'sector_name': 'Belvedere',
      'boulders': [
+         {
+             'name': 'Blocco 1 - Little Karma',
+             'coords': (46.24074676167137, 9.600611281316468),
+             'lines': [
+                 {'name': 'Little Karma 8A', 'link': 'https://www.instagram.com/p/DJPmt9Dtbug/'},
+             ]
+         },
          {
              'name': 'Blocco 3 - Oscurità',
              'coords': (46.240353, 9.600340),
@@ -322,7 +429,7 @@ boulder_list = [
                  {'name': 'Oscurità 7A', 'link': 'https://www.instagram.com/p/C8kJ2bLNVBz/'},
                  {'name': 'Oscurità sit 7B+', 'link': 'https://www.instagram.com/p/DCPbflLNcWZ/'}
              ]
-         }
+         },
      ]
      },
     {'sector_name': 'Ersaf',
@@ -339,6 +446,20 @@ boulder_list = [
              'coords': (46.243162, 9.595707),
              'lines': [
                  {'name': 'La Balance 7a', 'link': 'https://www.instagram.com/p/DAVsldrtOZN/'}
+             ]
+         },
+         {
+             'name': 'Blocco 12 - Lady Red',
+             'coords': (46.242931, 9.595807),
+             'lines': [
+                 {'name': 'Lady Red 7B', 'link': 'https://www.instagram.com/p/DJmjWiFtr7v/'}
+             ]
+         },
+         {
+             'name': 'Blocco 13 - Sono Fuori dal Tunnel',
+             'coords': (46.242730, 9.595731),
+             'lines': [
+                 {'name': 'La Danza della Morte 7B', 'link': 'https://www.instagram.com/p/DJZfn1UtESv/'}
              ]
          },
          {
@@ -402,6 +523,17 @@ boulder_list = [
                  {'name': 'Idrojet 6A+', 'link': 'https://www.instagram.com/p/C8mokmXN3Mb/'}
              ]
          }
+     ]
+     },
+    {'sector_name': 'Cascina Piana',
+     'boulders': [
+         {
+             'name': 'Blocco 4 - La Carrozza di Rame',
+             'coords': (46.2551449, 9.6546663),
+             'lines': [
+                 {'name': 'Spigolo della Carrozza di Rame 7A', 'link': 'https://www.instagram.com/p/DIB94d4NF_z/'}
+             ]
+         },
      ]
      },
 ]
