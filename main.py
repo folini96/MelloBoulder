@@ -414,6 +414,8 @@ cluster = MarkerCluster(options={'showCoverageOnHover': False,
 MyMap = folium.Map(location=[46.2276363923169, 9.635030700689214], tiles='OpenStreetMap', zoom_start=13,
                    min_zoom=11, max_zoom=19, control_scale=True)
 
+search_entries = []
+
 # Create markers for each pub in the pub dictionary
 for sector in boulder_list:
     for boulder in sector["boulders"]:
@@ -423,6 +425,12 @@ for sector in boulder_list:
         lines_html = ""
         for line in boulder["lines"]:
             lines_html = lines_html + f""" <div> <a href="{line["link"]}"> {line["name"]} </a> </div>"""
+            search_entries.append({
+                'line': line['name'],
+                'link': line['link'],
+                'boulder': boulder['name'],
+                'sector': sector['sector_name'],
+            })
         pub_html = folium.Html(
             f""" <p style="text-align: center;"><span style="font-family: Didot, serif; font-size: 21px;">{boulder["name"]}</span></p>{lines_html}""",
             script=True)
@@ -442,5 +450,55 @@ LocateControl(auto_start=False).add_to(MyMap)
 tab_title = """<title>MiraMonkeys boulders</title>"""
 MyMap.get_root().html.add_child(folium.Element(tab_title))
 
-# Save the map
-MyMap.save('index.html')
+map_html = MyMap.get_root().render()
+
+search_json = json.dumps(search_entries).replace("</", "<\\/")  # prevent </script> break
+
+search_script = f"""
+<script>
+const searchData = {search_json};
+
+const input = document.createElement('input');
+input.type = 'text';
+input.placeholder = 'Cerca un blocco, una linea, o un settore';
+input.style = 'position:absolute;top:10px;left:50px;z-index:1000;width:300px;padding:6px;';
+document.body.appendChild(input);
+
+const results = document.createElement('div');
+results.style = 'position:absolute;top:40px;left:50px;z-index:1000;width:300px;background:white;border:1px solid #ccc;max-height:300px;overflow-y:auto;font-family:sans-serif;font-size:14px;';
+results.hidden = true;
+document.body.appendChild(results);
+
+input.addEventListener('input', () => {{
+    const query = input.value.toLowerCase();
+    results.innerHTML = '';
+    if (!query) {{
+        results.hidden = true;
+        return;
+    }}
+
+    const matches = searchData.filter(item =>
+        item.line.toLowerCase().includes(query) ||
+        item.boulder.toLowerCase().includes(query) ||
+        item.sector.toLowerCase().includes(query)
+    );
+
+    matches.forEach(item => {{
+        const div = document.createElement('div');
+        div.innerHTML = `<strong>${{item.boulder}} - ${{item.line}}</strong> (${{item.sector}})`;
+        div.style = 'padding:6px;cursor:pointer;border-bottom:1px solid #eee;';
+        div.addEventListener('click', () => {{
+            window.open(item.link, '_blank');
+        }});
+        results.appendChild(div);
+    }});
+
+    results.hidden = matches.length === 0;
+}});
+</script>
+"""
+
+final_html = map_html.replace("</body>", f"{search_script}</body>")
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(final_html)
