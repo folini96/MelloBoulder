@@ -495,6 +495,18 @@ input.addEventListener('input', () => {{
 
     results.hidden = matches.length === 0;
 }});
+
+input.addEventListener('blur', () => {{
+    setTimeout(() => {{
+        results.hidden = true;
+    }}, 150);
+}});
+
+input.addEventListener('focus', () => {{
+   if (input.value) {{
+        results.hidden = false;
+   }}
+}});
 </script>
 """
 
